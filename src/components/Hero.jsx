@@ -1,4 +1,5 @@
 import * as motion from "motion/react-client";
+import { useIsMobile } from "../hooks/useMediaQuery";
 import DATA from "../data/portfolio";
 
 export default function Hero({ t }) {
