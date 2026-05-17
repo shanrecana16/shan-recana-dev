@@ -3,6 +3,7 @@ import * as motion from "motion/react-client";
 import { Section, SectionTitle } from "./UI";
 import DATA from "../data/portfolio";
 import emailjs from "@emailjs/browser";
+import { useIsMobile } from "../hooks/useMediaQuery";
 
 const CONTACT_ITEMS = [
   { label: "Email", key: "email", icon: "✉" },
@@ -35,6 +36,7 @@ const inputBase = (t) => ({
 });
 
 export default function Contact({ t }) {
+  const isMobile = useIsMobile();
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
@@ -69,7 +71,7 @@ export default function Contact({ t }) {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
             gap: 64,
             alignItems: "start",
           }}
@@ -240,11 +242,12 @@ export default function Contact({ t }) {
                     border: "none",
                     borderRadius: 99,
                     padding: "14px 32px",
-                    fontSize: 15,
+                    fontSize: 16,
                     fontFamily: "'Google Sans', sans-serif",
                     fontWeight: 500,
                     cursor: "pointer",
-                    alignSelf: "flex-start",
+                    width: isMobile ? "100%" : "auto",
+                    alignSelf: isMobile ? "stretch" : "flex-start",
                   }}
                 >
                   Send message →
