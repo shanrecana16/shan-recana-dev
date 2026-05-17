@@ -1,6 +1,7 @@
 import * as motion from "motion/react-client";
 import { Section, SectionTitle } from "./UI";
 import DATA from "../data/portfolio";
+const isMobile = useIsMobile();
 
 const INFO_ROWS = [
   { label: "Location", key: "location" },
@@ -39,7 +40,7 @@ export default function About({ t }) {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
                 gap: 12,
               }}
             >
