@@ -16,15 +16,13 @@ export default function Portfolio() {
     <>
       {/* Global styles — Google Sans fonts + resets */}
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=Google+Sans+Display:wght@400;500&display=swap');
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body { transition: background 0.3s, color 0.3s; }
-
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: ${t.border}; border-radius: 99px; }
+         @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=Google+Sans+Display:wght@400;500&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body { transition: background 0.3s, color 0.3s; overflow-x: hidden; margin: 0; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: ${t.border}; border-radius: 99px; }
 
         
       `}</style>
