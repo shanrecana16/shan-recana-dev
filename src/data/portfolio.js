@@ -12,7 +12,7 @@ const DATA = {
   phone: "+63 (999) 3666-4149",
   location: "Taguig City, Philippines",
   github: "https://github.com/shanrecana16",
-  //! linkedin: "linkedin.com/in/alexrivera",
+  linkedin: "linkedin.com/in/alexrivera",
   //! website: "alexrivera.dev",
 
   // ── About paragraph ────────────────────────────────────────────────────────
@@ -48,6 +48,7 @@ const DATA = {
     "Photopshop",
     "Vercel",
     "Git",
+    "Visual Basic .NET",
   ],
 
   // ── Work Experience (color: "accent" | "green" | "yellow") ───────────────
@@ -67,7 +68,7 @@ const DATA = {
       color: "green",
     },
     {
-      company: "IT Systems $ Hardware Deployment",
+      company: "IT Systems & Hardware Deployment",
       role: "Academic Project",
       period: "2023 — 2024",
       desc: "Successfully executed a bare-metal Linux installation on physical hardware. Managed BIOS/UEFI configuration, bootable media creation, and disk partitioning while ensuring full hardware compatibility.",
