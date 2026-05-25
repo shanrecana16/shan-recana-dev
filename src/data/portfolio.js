@@ -12,7 +12,7 @@ const DATA = {
   phone: "+63 (999) 3666-4149",
   location: "Taguig City, Philippines",
   github: "https://github.com/shanrecana16",
-  linkedin: "linkedin.com/in/alexrivera",
+  //! linkedin: "linkedin.com/in/alexrivera",
   //! website: "alexrivera.dev",
 
   // ── About paragraph ────────────────────────────────────────────────────────
@@ -103,7 +103,7 @@ const DATA = {
       name: "Software QA Manual Testing Workshop",
       issuer: "MSTConnect",
       year: "2026",
-      pdf: "/certs/Recana_ShanMickle.pdf",
+      pdf: "/certs/RECAÑA, SHAN MICKLE.pdf",
       icon: "🎓",
       color: "yellow",
       credentialId: "MST-QA-2026-001",
